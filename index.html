@@ -6,8 +6,8 @@
     <title>My Website</title>
     <style>
         body {
-            /* Update the path to the image using the correct folder structure */
-            background-image: url('images/background.jpeg');
+            /* Default background image */
+            background-image: url('images/background.jpg');
             /* Set background size and position */
             background-size: cover;
             background-position: center;
@@ -15,7 +15,14 @@
             font-family: Arial, sans-serif;
             color: #333;
         }
-        /* Additional CSS for specific elements can be added here */
+
+        /* Media query for adjusting background on smaller screens */
+        @media only screen and (max-width: 767px) {
+            body {
+                background-size: auto; /* Adjust background size for smaller screens */
+                background-position: center; /* Center the background image */
+            }
+        }
     </style>
 </head>
 
